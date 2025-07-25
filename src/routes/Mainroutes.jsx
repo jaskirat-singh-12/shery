@@ -9,7 +9,6 @@ import NikeLogin from '../pages/Login'
 const Mainroutes = () => {
   return (
     <Routes>
-    <Route path='/about' element={<About/>} />
     <Route path='/' element={<LandingPage/>} />
     <Route path='/mainpage' element={<MainPage/>} />
     <Route path='/products' element={<Products/>} />

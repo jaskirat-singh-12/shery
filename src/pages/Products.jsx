@@ -6,21 +6,21 @@ const products = [
     id: 1,
     name: "Air Jordan 1 Retro",
     price: "$200",
-    image: "https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/0a99e4fc-2d53-4f63-b14c-d2e0c916f9c3/air-jordan-1-retro-high-og-royal-reimagined-release-date.jpg",
+    image: "/jordan.png",
     description: "Iconic design meets premium materials in this legendary sneaker."
   },
   {
     id: 2,
     name: "Nike Air Max 90",
     price: "$150",
-    image: "https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/2e6bb791-8883-45de-b0b3-01be36e7fa9b/air-max-90-se-shoes-CVnKrW.png",
+    image: "/about.png",
     description: "Classic silhouette with modern cushioning and unmatched comfort."
   },
   {
     id: 3,
     name: "Nike Dunk Low",
     price: "$120",
-    image: "https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/0246e413-d03e-4e1d-b490-4b310b05f174/dunk-low-retro-shoes-Zc0601.png",
+    image: "/about-2.png",
     description: "Clean, casual, and perfect for any sneaker rotation."
   }
 ];
