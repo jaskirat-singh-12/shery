@@ -38,7 +38,7 @@ const NewCollection = () => {
             className="cardcontainer relative w-1/2 h-[60vh] ">
               <h1 
               className="absolute text-6xl font-bold left-full -translate-x-1/2 top-1/2 text-white -translate-y-1/2 leading-none  flex overflow-hidden z-[8] ">
-                {"NIKES".split("").map((item, index) => (
+                {"Airborn".split("").map((item, index) => (
                   <motion.span initial={{y:"100%"}} animate= {card[0] }
                   transition={{ease: [0.7, 0, 0.84, 0], delay: index * 0.4 }}
                   
@@ -60,7 +60,7 @@ const NewCollection = () => {
              }}
             className="cardcontainer relative w-1/2 h-[60vh] ">
               <h1 className="absolute text-6xl font-bold right-full translate-x-1/2 top-1/2 text-white -translate-y-1/2 leading-none  flex overflow-hidden z-[8] ">
-                {"NIKdE".split("").map((item, index) => (
+                {"Volt".split("").map((item, index) => (
                    <motion.span initial={{y:"100%"}} animate= {card[1] }
                   transition={{ease: [0.7, 0, 0.84, 0], delay: index * 0.4 }}
                   
