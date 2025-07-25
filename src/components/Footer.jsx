@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" text-white text-xl px-8 py-12 h-screen w-full overflow-hidden">
+    <div className=" text-white text-xl px-8 py-12 h-full w-full overflow-hidden mt-60">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Nike Info */}
         <div>

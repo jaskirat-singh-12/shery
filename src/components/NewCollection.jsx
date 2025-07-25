@@ -16,7 +16,7 @@ const NewCollection = () => {
       <div
       data-scroll
       data-scroll-speed="-.4"
-      className="w-full py-15 text-white bg-black h-screen mt-20"
+      className="w-full py-15 text-white bg-[#391f0d] h-screen mt-20"
       
       >
         <div>
