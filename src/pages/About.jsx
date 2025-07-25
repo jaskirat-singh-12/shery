@@ -2,11 +2,9 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="w-full p-20 rounded-tl-2xl bg-[#BB8493] ">
+    <div data-scroll data-scroll-speed=".3" className="w-full h-screen p-20 rounded-tl-2xl overflow-hidden bg-[#BB8493]  mb-20 ">
       <h1 className="text-[3vw] leading-[4.5vw] tracking-tight ">
-        Hey! I’m someone who lives and breathes bold design, fast moves, and
-        everything Nike stands for. From the streets to the screen, I love
-        creating experiences that blend energy, style, and performance.
+        Born from Nike’s legacy of breaking rules — I design raw, powerful experiences that move like the game and hit like history.
         <br />
         <span className="font-bold">
           This isn’t just about sneakers or sportswear — it’s about mindset.

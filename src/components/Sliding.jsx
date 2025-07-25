@@ -4,13 +4,31 @@ import React from 'react'
 const Sliding = () => {
   
   return (
-    <div className='pt-10 w-full h-[50vh] bg-amber-950'>
-    <div className='border-t-2 border-b-3 border-zinc-300 flex gap-10 overflow-hidden text-white'>
-      <motion.h1 initial={{x:"100%"}} animate={{x: "-100%"}} transition={{ease: "linear", repeat: Infinity, duration: 5}} className='text-[7vw] leading-none font-bold pt-7 uppercase'>we are nike</motion.h1>
-      <motion.h1 initial={{x:"100%"}} animate={{x: "-100%"}} transition={{ease: "linear", repeat: Infinity, duration: 5}} className='text-[7vw] leading-none font-bold pt-7 uppercase'>we are nike</motion.h1>
-      <motion.h1 initial={{x:"100%"}} animate={{x: "-100%"}} transition={{ease: "linear", repeat: Infinity, duration: 5}} className='text-[7vw] leading-none font-bold pt-7 uppercase'>we are nike</motion.h1>
-    </div>
-      
+    <div 
+    data-scroll data-scroll-section data-scroll-speed=".2"
+    className="relative w-full overflow-hidden border-t-2 border-b-3 pl-5 pt-20 pb-20  pr-30 border-zinc-300 bg-amber-950">
+      <motion.div
+        className="flex whitespace-nowrap"
+        animate={{ x: ["0%", "-100%"] }}
+        transition={{ ease: "linear", repeat: Infinity, duration: 5 }}
+      >
+        <div className="flex">
+          <h1 className="text-[10vw] leading-none font-bold uppercase text-white px-4">
+            we are nike
+          </h1>
+          <h1 className="text-[10vw] leading-none font-bold uppercase text-white px-4">
+            we are nike
+          </h1>
+          <h1 className="text-[10vw] leading-none font-bold uppercase text-white px-4">
+            we are nike
+          </h1>
+          <h1 className="text-[10vw] leading-none font-bold uppercase text-white px-4">
+            we are nike
+          </h1>
+        </div>
+
+        
+      </motion.div>
     </div>
   )
 }

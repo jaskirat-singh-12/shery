@@ -1,11 +1,11 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import Nav from "./components/Nav";
 import gsap from "gsap";
-import Lenis from "./hooks/UseLenis";
 import Mainroutes from "./routes/Mainroutes";
 import Lightning from "./Lightning/Lightning";
 import FallingText from "./FallingText/FallingText";
 import { AnimatePresence, motion } from "framer-motion";
+import LocomotiveScroll from 'locomotive-scroll';
 
 const App = () => {
   const [textKey, setTextKey] = useState("intro-text");
@@ -17,8 +17,8 @@ const App = () => {
 
   const [animationDone, setAnimationDone] = useState(false);
 
-  Lenis();
 
+  
   useEffect(() => {
   if (progressComplete) {
     // First, show the text and reset the key (to trigger falling)
@@ -52,9 +52,9 @@ const App = () => {
 }, [isLoading]);
 
 
-  useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
-      const t1 = gsap.timeline({
+useLayoutEffect(() => {
+  let ctx = gsap.context(() => {
+    const t1 = gsap.timeline({
         onComplete: () => {
           setAnimationDone(true); // signal animation is done
         },
@@ -65,8 +65,8 @@ const App = () => {
         xPercent: -100,
         duration: 1.2,
       })
-        .from("#slider-right", {
-          xPercent: 100,
+      .from("#slider-right", {
+        xPercent: 100,
           duration: 1.2,
         })
         .add(() => {
@@ -94,6 +94,7 @@ const App = () => {
       setIsLoading(false);
     }
   }, [animationDone, progressComplete]);
+  const locomotiveScroll = new LocomotiveScroll();
   return (
     <div
       ref={comp}
@@ -161,7 +162,8 @@ const App = () => {
 
       {/* MAIN CONTENT */}
       {!isLoading && (
-        <div id="welcome" className="h-full w-full bg-[#2D033B]">
+        <div 
+        id="welcome" className="h-full w-full bg-black">
           <Nav />
           <Mainroutes />
         </div>

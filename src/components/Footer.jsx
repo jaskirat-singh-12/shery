@@ -2,11 +2,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-black text-white text-xl px-8 py-12">
+    <div className=" text-white text-xl px-8 py-12 h-screen w-full overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Nike Info */}
         <div>
-          <img src="/nike-logo.png" alt="Nike" className="w-16 mb-4" />
+          <img src="/collect.png" alt="Nike" className="w-16 h-7 bg-cover mb-4" />
           <p className="text-sm">
             Style. Speed. Strength.
             <br /> Engineered for performance.
