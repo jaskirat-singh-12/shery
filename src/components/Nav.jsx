@@ -13,7 +13,7 @@ const Nav = () => {
           
           <li><NavLink to={"/"} className="hover:text-gray-300">Home</NavLink></li>
           <li><NavLink to={"/products"} className="hover:text-gray-300">Shop</NavLink></li>
-          <li><NavLink to={"/mainpage"} className="hover:text-gray-300">Contact</NavLink></li>
+          <li><NavLink to={"/mainpage"} className="hover:text-gray-300">Showcase</NavLink></li>
           <li><NavLink to={"/Login"} className="hover:text-gray-300">Login</NavLink></li>
         </ul>
       </div>

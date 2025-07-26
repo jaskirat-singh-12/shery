@@ -8,7 +8,7 @@ import Design from './Canva'
 
 const MainPage = () => {
   return (
-    <div className='h-[200vh] w-full'>
+    <div className='h-[200vh] w-full bg-emerald-800'>
 
     <Canvas 
     flat
